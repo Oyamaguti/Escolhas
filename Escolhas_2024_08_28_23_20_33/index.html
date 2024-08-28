@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <!-- Fonte do botão !-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Matemasie&display=swap" rel="stylesheet">
+    
+    <!-- Fonte do texto !-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Grey+Qo&family=Matemasie&display=swap" rel="stylesheet">
+    
+    <!-- Fonte do rodapé (creditos) !-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Grey+Qo&family=Matemasie&display=swap" rel="stylesheet">
+    
+    <meta charset="utf-8" />
+  
+  </head>
+  <body>
+    <main>
+<!-- Primeira tela de carregamento !-->
+      <div class="passo ativo" id="Passo-0">
+          <h1 class="titulo"> Os mistérios da ordem silenciosa</h1>
+        <div class="principal"><img src="logo.png" alt="Logo normal" class="logo"></div>
+      <p> Na pacata cidade de Bebedouro, no interior de São Paulo, Fred Peterson, um jovem chefe da delegação de polícia, começa a notar atividades estranhas em uma floresta próxima. Curioso e determinado a proteger sua cidade, Fred decide investigar o que está acontecendo, mas o que ele descobre é muito mais profundo e perigoso do que ele imaginava. Agora, suas escolhas definirão o destino não apenas de si mesmo, mas de toda a cidade. <br /> Fred Peterson estava em sua sala na delegacia, analisando relatórios da rotina pacata da cidade. No entanto, um conjunto de relatos de moradores sobre luzes estranhas e sons incomuns na floresta próxima chamou sua atenção. Ele fica em um dilema, convocar seus melhores agentes para uma missão de reconhecimento, ir sozinho ou só ignorar.
+O que ele deve fazer? </p>
+      
+      <button class="proximo" data-proximo="3"> Reunir pessoas e investigar em grupo🔎</button>
+      
+      <button class="proximo" data-proximo="2"> Não se preocupar e penas ignorar🤷‍♂️</button>
+      
+      <button class="proximo" data-proximo="1"> Não se preocupar e investigar sozinho🔍 </button>
+        </div>
+      
+      <!-- Botão escolha 1 !-->
+      <div class="passo" id="Passo-1"> 
+        <h1 class="titulo"> Os mistérios da ordem silenciosa</h1>
+        <div class="principal"><img src="logo.png" alt="Logo normal" class="logo"></div>
+      <p> Fred adentra a floresta sozinho, guiado apenas por sua lanterna. A caminhada é longa e silenciosa até que ele encontra um antigo templo abandonado. Ele encontra um círculo de pedras com símbolos estranhos e um livro antigo no centro. Ao abrir o livro, ele lê uma passagem que o faz desmaiar.</p>
+      
+      <button class="proximo" data-proximo="6"> Continuar a leitura do livro📖 </button>
+      
+      <button class="proximo" data-proximo="5"> Queimar o livro imediatamente🔥📖 </button>
+      
+      <button class="proximo" data-proximo="4"> Guardar o livro e sair da floresta🏃‍💨🌲 </button>
+        </div>
+      
+      <!-- Botão escolha 2 !-->
+      <div class="passo" id="Passo-2">  
+      <div class="finalt"><img src="f1.png"></div>
+      <p> Fred decide que os relatos são apenas histórias rumores e continua seu trabalho normalmente. No entanto, com o tempo, desaparecimentos começam a ocorrer na cidade. A Ordem Silenciosa está ficando mais ousada, e Fred se vê impotente para deter o que ignorou.</p>
+      <button class="proximo" data-proximo="0">Poxa, a aventura já acabou, vamos tentar outros finais? </button>
+        </div>
+      
+      <!-- Botão escolha 3 !-->
+      <div class="passo" id="Passo-3"> 
+      <h1 class="titulo"> Os mistérios da ordem silenciosa</h1>
+        <div class="principal"><img src="logo.png" alt="Logo normal" class="logo"></div>
+      <p> Fred percebe que investigar a floresta sozinho seria arriscado demais, então reúne sua equipe e se prepara para a missão. Na floresta, eles avançam em formação, encontrando sinais recentes de atividade. Logo, descobrem uma clareira com um antigo altar coberto de símbolos misteriosos e um artefato brilhante no centro.
+Antes que Fred possa tocar o artefato, Paulo, um dos membros da equipe, avista figuras encapuzadas surgindo das sombras ao redor da clareira. Eles são membros da Ordem Silenciosa, prontos para emboscar qualquer intruso.</p>
+      
+      <button class="proximo" data-proximo="9"> Ordenar que a equipe lute contra os encapuzados🤼‍♂️ </button>
+      
+      <button class="proximo" data-proximo="8"> Tentar negociar com a Ordem Silenciosa </button>
+      
+      <button class="proximo" data-proximo="7"> Recuperar o artefato e fugir da floresta🏃‍💨🌲 </button>
+        </div>
+      
+      <!-- Botão escolha 4 !-->
+      <div class="passo" id="Passo-4"> 
+      <h1 class="titulo"> Os mistérios da ordem silenciosa</h1>
+        <div class="principal"><img src="logo.png" alt="Logo normal" class="logo"></div>
+      <p> Fred, preocupado com o perigo de continuar a leitura ou destruir o livro na floresta, decide guardá-lo e sair rapidamente. Na delegacia, ele investiga o livro com segurança e descobre que ele contém segredos sobre a criação da Ordem Silenciosa e um ritual para selar seu poder. Agora, Fred precisa decidir se vai destruir a Ordem ou usar o poder do livro para seu próprio benefício.</p>
+      
+      <button class="proximo" data-proximo="11"> Destruir a Ordem usando o ritual </button>
+      
+      <button class="proximo" data-proximo="10"> Guardar o livro para uso próprio </button>
+      
+        </div>
+      
+      <!-- Botão escolha 5 !-->
+      <div class="passo" id="Passo-5"> 
+      <h1 class="titulo"> Os mistérios da ordem silenciosa</h1>
+        <div class="principal"><img src="logo.png" alt="Logo normal" class="logo"></div>
+      <p> Fred queima o livro, mas os símbolos ao redor começam a brilhar intensamente. De repente, a floresta fica silenciosa, e as figuras encapuzadas aparecem, bloqueando sua saída.</p>
+      
+      <button class="proximo" data-proximo="14"> Lutar contra as figuras </button>
+      
+      <button class="proximo" data-proximo="13"> Tentar negociar elas </button>
+      
+      <button class="proximo" data-proximo="12"> Fugir desesperadamente pela floresta </button>
+        </div>
+
+<!-- Botão escolha 6 !-->
+      <div class="passo" id="Passo-6"> 
+      <h1 class="titulo"> Os mistérios da ordem silenciosa</h1>
+        <div class="principal"><img src="logo.png" alt="Logo normal" class="logo"></div>
+      <p> Fred é subitamente consumido por visões aterrorizantes. Ele acorda no mesmo ponto de onde partiu, com a sensação de que o tempo foi reiniciado.</p>
+      
+      <button class="proximo" data-proximo="0"> Voltar ao começo </button>
+        </div>
+      
+      <!-- Botão escolha 7 !-->
+      <div class="passo" id="Passo-7"> 
+      <h1 class="titulo"> Os mistérios da ordem silenciosa</h1>
+        <div class="principal"><img src="logo.png" alt="Logo normal" class="logo"></div>
+      <p> Fred rapidamente agarra o artefato e ordena que sua equipe fuja da floresta. As figuras encapuzadas os perseguem, mas Fred e sua equipe conseguem escapar por pouco. De volta à delegacia, Fred esconde o artefato em um local seguro e começa a investigar seu verdadeiro propósito. No entanto, a Ordem silenciosa faz breve aparições na delegacia, como por exemplo deixar ameaças, eles falaram que irão fazer vingança, o que vocês vão fazer agora?</p>
+      
+      <button class="proximo" data-proximo="16"> Voltar para a floresta e combate-los </button>
+
+        <button class="proximo" data-proximo="15"> Esperar eles chegarem a delegacia </button>
+        </div>
+      
+      <!-- Botão escolha 8 !-->
+      <div class="passo" id="Passo-8"> 
+      <div class="finalf"><img src="f3.png"></div>
+      <p> Fred levanta as mãos em um gesto de paz e tenta negociar com as figuras encapuzadas. A líder da Ordem, uma mulher de voz fria e ameaçadora, concorda em ouvir Fred. Durante a negociação, Fred descobre que o artefato é uma chave para liberar um antigo mal selado nas profundezas da floresta. A Ordem oferece a Fred um acordo: ele entrega o artefato, e a cidade será poupada.
+Fred, vendo que a Ordem está disposta a destruir tudo se não conseguir o artefato, decide aceitar o acordo. Ele entrega o objeto e a Ordem se retira, mas Fred sabe que fez uma escolha difícil. A paz temporária é mantida, mas a ameaça da Ordem ainda paira sobre Bebedouro.</p>
+      
+      <button class="proximo" data-proximo="0"> Poxa, a aventura já acabou, vamos tentar outros finais? </button>
+        </div>
+      
+      <!-- Botão escolha 9 !-->
+      <div class="passo" id="Passo-9"> 
+      <div class="finalt"><img src="f4.png"></div>
+      <p> Fred ordena que sua equipe se prepare para o combate. O confronto é intenso, e apesar da coragem de Fred e sua equipe, as figuras encapuzadas são habilidosas e implacáveis. Após uma batalha árdua, Fred consegue derrotar a maioria dos inimigos, mas perde alguns membros de sua equipe no processo. Com o artefato em mãos, Fred retorna à cidade, determinado a descobrir mais sobre o poder do objeto e a destruir a Ordem Silenciosa de uma vez por todas. Entretanto, ele perde seu propósito de vida</p>
+      
+      <button class="proximo" data-proximo="0"> Poxa, a aventura já acabou, vamos tentar outros finais? </button>
+        </div>
+      
+      <!-- Botão escolha 10 !-->
+      <div class="passo" id="Passo-10"> 
+      <div class="finals"><img src="f5.png"></div> 
+      <p> Fred decide que o poder do livro é valioso demais para ser destruído. Ele o esconde em um lugar seguro, onde só ele pode acessá-lo. Com o tempo, Fred começa a usar o conhecimento do livro para ganhar mais poder e influência, mas isso o corrompe. Eventualmente, ele se torna o novo líder da Ordem, perpetuando o ciclo de mal que tentou destruir.</p>
+      
+      <button class="proximo" data-proximo="0"> Poxa, a aventura já acabou, vamos tentar outros finais? </button>
+        </div>
+      
+      <!-- Botão escolha 11 !-->
+      <div class="passo" id="Passo-11"> 
+      <div class="finalf"><img src="f6.png"></div>
+      <p> Fred realiza o ritual com precisão, e a Ordem Silenciosa começa a desmoronar. Os membros começam a perder suas habilidades e influência, e a cidade finalmente se vê livre da ameaça. Fred se torna um herói e o guardião de um segredo que nunca será revelado.</p>
+      
+      <button class="proximo" data-proximo="0"> Poxa, a aventura já acabou, vamos tentar outros finais? </button>
+        </div>
+      
+      <!-- Botão escolha 12 !-->
+      <div class="passo" id="Passo-12"> 
+      <h1 class="titulo"> Os mistérios da ordem silenciosa</h1>
+        <div class="principal"><img src="logo.png" alt="Logo normal" class="logo"></div>
+      <p> Fred corre pela floresta, mas logo se perde. Ele tropeça e cai em um abismo, onde encontra uma caverna secreta com escritas antigas. Ali, ele descobre a verdade sobre a Ordem e uma maneira de destruí-la.</p>
+      
+      <button class="proximo" data-proximo="18"> Usar o conhecimento para destruir a Ordem </button>
+      
+      <button class="proximo" data-proximo="17"> Deixar a caverna e esquecer o que viu </button>
+        </div>
+      
+      <!-- Botão escolha 13 !-->
+      <div class="passo" id="Passo-13"> 
+      <div class="finalt"><img src="f7.png"></div>  
+      <p> Fred tenta negociar, e as figuras, impressionadas com sua coragem, lhe oferecem uma escolha: se juntar à Ordem ou morrer. Fred, sem outra opção, aceita se unir a eles, tornando-se um membro infiltrado na delegação de polícia.</p>
+      
+      <button class="proximo" data-proximo="0"> Poxa, a aventura já acabou, vamos tentar outros finais? </button>
+        </div>
+      
+      <!-- Botão escolha 14 !-->
+      <div class="passo" id="Passo-14"> 
+      <div class="finalt"><img src="f8.png"></div>
+      <p> Fred enfrenta as figuras, mas é rapidamente dominado. Ele é levado para o coração da Ordem Silenciosa, onde descobre que foi marcado para se tornar o próximo líder. Sem escolhas, ele é forçado a se submeter à vontade da Ordem.</p>
+      
+      <button class="proximo" data-proximo="0"> Poxa, a aventura já acabou, vamos tentar outros finais? </button>
+        </div>
+      
+      <!-- Botão escolha 15 !-->
+      <div class="passo" id="Passo-15"> 
+      <h1 class="titulo"> Os mistérios da ordem silenciosa</h1>
+        <div class="principal"><img src="logo.png" alt="Logo normal" class="logo"></div>
+      <p> A Ordem não apareceu durante 2 meses, mas fizeram breves aparições, Fred se vê em uma corrida contra o tempo para descobrir como usar o artefato para derrotar a Ordem antes que a cidade seja destruída. Vocês descobrem duas hipóteses sobre o artefato, é necessário arriscar qual estará certa! Não há tempo para analisar, decida rápido!</p>
+      
+      <button class="proximo" data-proximo="20"> Fazer um ritual para invocar uma criatura misteriosa </button>
+        
+      <button class="proximo" data-proximo="19"> Fazer um ritual totalmente misterioso </button>
+        </div>
+      
+      <!-- Botão escolha 16 !-->
+      <div class="passo" id="Passo-16"> 
+      <h1 class="titulo"> Os mistérios da ordem silenciosa</h1>
+        <div class="principal"><img src="logo.png" alt="Logo normal" class="logo"></div>
+      <p> Repentinamente o tempo muda, começa a chover, vocês voltam para a floresta independente do clima, chegando lá vocês percebem pegadas suspeitas adentrando a floresta, você como capitão dessa investigação pensa em duas possibilidades: Seguir essas pegadas ou voltar para a clareira com um antigo altar coberto de símbolos misteriosos</p>
+      
+      <button class="proximo" data-proximo="21"> voltar para a clareira com um antigo altar coberto de símbolos misteriosos </button>
+        
+      <button class="proximo" data-proximo="22"> Seguir essas pegadas </button>
+        </div>
+      
+      <!-- Botão escolha 17 !-->
+      <div class="passo" id="Passo-17"> 
+      <div class="finalt"> <img src="f9.png"> </div>
+      <p> Fred decide não se envolver mais e volta para a cidade. No entanto, a Ordem continua a crescer em poder, e Fred vive o resto de sua vida em constante medo e paranoia, sabendo que poderia ter feito algo, mas escolheu não agir.</p>
+      
+      <button class="proximo" data-proximo="0"> Poxa, a aventura já acabou, vamos tentar outros finais? </button>
+        </div>
+      
+      <!-- Botão escolha 18 !-->
+      <div class="passo" id="Passo-18"> 
+      <div class="finalf"> <img src="f10.png"> </div>
+      <p> Fred volta à cidade e, com o conhecimento adquirido, lidera uma operação para desmantelar a Ordem Silenciosa. A cidade é salva, e Fred se torna um herói, mas sabe que o mal nunca desaparece completamente.</p>
+      
+      <button class="proximo" data-proximo="0"> Poxa, a aventura já acabou, vamos tentar outros finais? </button>
+        </div>
+      
+      <!-- Botão escolha 19 !-->
+      <div class="passo" id="Passo-19"> 
+      <div class="finalf"> <img src="f2.png"> </div>
+      <p> Fred age com precisão e decide fazer um ritual totalmente misterioso. Você acaba invocando uma criatura amigável, você explica a situação com rapidez, ele aceita te ajudar, porém você terá que sofrer consequências. Com seu forte senso de justiça, você aceita, no mesmo instante você sente forte dores de cabeça e desmaia, após levantar você percebe que voltou no tempo e a existência da Ordem foi totalmente apagada. A consequência foi viver uma vida solitária e repleta de problemas de saúde</p>
+      
+      <button class="proximo" data-proximo="0"> Poxa, a aventura já acabou, vamos tentar outros finais </button>
+        </div>
+      
+      <!-- Botão escolha 20 !-->
+      <div class="passo" id="Passo-20"> 
+        <div class="finalt"> <img src="f11.png"></div>
+      <p> Fred decide fazer um ritual para invocar uma criatura misteriosa, ela surge na frente de vocês. Vocês percebem que essa criatura é amigável, vocês explicam a situação para ela. Ela aceita ajudar sem nada em troca. Após a explicação ela do nada desaparece, ela traz o líder da Ordem e seus capangas, vocês percebem que foram traídos por ela, repentinamente eles desaparecem. Contudo, num piscar de olhos vocês foram mortos com um corte profundo em suas barrigas. Você morreu!</p>
+      
+      <button class="proximo" data-proximo="0"> Poxa, a aventura já acabou, vamos tentar outros finais </button>
+        </div>
+      
+      <!-- Botão escolha 21 !-->
+      <div class="passo" id="Passo-21"> 
+<h1 class="titulo"> Os mistérios da ordem silenciosa</h1>
+        <div class="principal"><img src="logo.png" alt="Logo normal" class="logo"></div>
+      <p> Vocês decidem voltar lá, aparentemente naquele local não há chuva, vocês acham estranhos, mas mesmo assim seguem em frente. Ao chegar mais perto do altar você percebe sombras encapuzadas surgindo ao seu redor, você como líder precisa agir rápido, o que fazer?</p>
+      
+      <button class="proximo" data-proximo="24">Lutar com elas </button>
+        
+      <button class="proximo" data-proximo="23"> Negociar com as sombras </button>
+      </div>
+        
+         <!-- Botão escolha 22 !-->
+      <div class="passo" id="Passo-22"> 
+      <h1 class="titulo"> Os mistérios da ordem silenciosa</h1>
+        <div class="principal"><img src="logo.png" alt="Logo normal" class="logo"></div>
+      <p> Ao seguir essas pegadas você percebe que naquele local não há chuva, vocês acham estranhos, mas seguem seu rumo, as pegadas levarão ao esconderijo da Ordem. Vocês sem outra opção adentram no esconderijo, ao entrar vocês são recebidos pelo líder que já os esperavam. Vocês tem duas escolhas, se juntar ou morrer</p>
+      
+      <button class="proximo" data-proximo="26"> Lutar com elas </button>
+        
+      <button class="proximo" data-proximo="25"> Se juntar </button>
+      </div>
+        
+      <!-- Botão escolha 23 !-->
+      <div class="passo" id="Passo-23"> 
+        <div class="finals"> <img src="f5.png"> </div>
+      <p> Fred decide negociar com as sombras, repentinamente o líder dessa ordem aparece e convida Fred e sua equipe para esse movimente, Fred por ser um jovem prodígio foi chamado para ser o novo líder. Sem escolhas ele decide aceitar, em seguida ele é levado ao esconderijo e se junta a chamada "Nova Ordem"</p>
+      
+      <button class="proximo" data-proximo="0"> Poxa, a aventura já acabou, vamos tentar outros finais </button>
+      </div>
+      
+      <!-- Botão escolha 24 !-->
+      <div class="passo" id="Passo-24"> 
+        <div class="finalt"> <img src="f4.png"> </div>
+      <p> Fred ordena que sua equipe se prepare para o combate. O confronto é intenso, e apesar da coragem de Fred e sua equipe, as figuras encapuzadas são habilidosas e implacáveis. Após uma batalha árdua, Fred consegue derrotar a maioria dos inimigos, mas perde alguns membros de sua equipe no processo. Com o artefato em mãos, Fred retorna à cidade, determinado a descobrir mais sobre o poder do objeto e a destruir a Ordem Silenciosa de uma vez por todas. Entretanto, ele perde seu propósito de vida</p>
+      
+      <button class="proximo" data-proximo="0"> Poxa, a aventura já acabou, vamos tentar outros finais </button>
+      </div>
+      
+      <!-- Botão escolha 25 !-->
+      <div class="passo" id="Passo-25"> 
+        <div class="finals"> <img src="f5.png"> </div>
+      <p> Fred decide negociar com as sombras, repentinamente o líder dessa ordem aparece e convida Fred e sua equipe para esse movimente, Fred por ser um jovem prodígio foi chamado para ser o novo líder. Sem escolhas ele decide aceitar, em seguida ele é levado ao esconderijo e se junta a chamada "Nova Ordem"</p>
+      
+      <button class="proximo" data-proximo="0"> Poxa, a aventura já acabou, vamos tentar outros finais </button>
+      </div>
+      
+      <!-- Botão escolha 26 !-->
+      <div class="passo" id="Passo-26"> 
+        <div class="finalt"> <img src="f12.png"> </div>
+      <p> Vocês decidem lutar, entretanto, vocês estão no esconderijos deles, vocês estão em completa desvantagem, mas pela sua determinação e coragem decide enfrentar. No entanto, o final é óbvio você é morto e posto como prêmio para toda a cidade</p>
+      
+      <button class="proximo" data-proximo="0"> Poxa, a aventura já acabou, vamos tentar outros finais </button>
+      </div>
+      
+        </main>     
+    <footer> 
+      <div class="faixa2">
+      <p> Jogo produzido por <a href="https://github.com/Oyamaguti" target="_blank" class="nome-link"> Vinicius Oyamaguti </a> </p>
+      </div>
+    </footer>
+    <script src="sketch.js"></script>
+  </body>
+</html>
